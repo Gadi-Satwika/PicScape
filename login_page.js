@@ -46,5 +46,5 @@ submit.addEventListener("click", function(event) {
 
 document.getElementById("showSignupPage").addEventListener("click", function(event) {
     event.preventDefault()
-    window.location.href ="Browse_Image.html";
+    window.location.href ="index.html";
 });
