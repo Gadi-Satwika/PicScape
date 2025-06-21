@@ -1,0 +1,55 @@
+body{
+    background-image: url('https://img.freepik.com/free-photo/aokigahara-forest-dark-style_23-2151542364.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+
+.main-heading{
+    font-weight: 700;
+    font-family: Lucida;
+    font-size: 40px;
+}
+.description{
+    font-weight: 500;
+    font-family: Lucida;
+    font-size: 20px;
+}
+.main-heading, .description,.browseImageBtn,.customizeStyleBtn {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 2s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.browseImageBtn
+{
+    background-color: rgb(55, 107, 102);
+    color: white;
+    width: 152px;
+    height: 48px;
+    border: 2px dashed transparent;
+    border-radius: 7px;
+}
+.customizeStyleBtn
+{
+    background-color: rgba(47, 73, 40, 0.938);
+    color: white;
+    width: 152px;
+    height: 48px;
+    border: 2px dashed transparent;
+    border-radius: 7px;
+}
+.browseImageBtn:hover,.customizeStyleBtn:hover{
+    background-color: transparent;
+    border: 2px solid white;
+}

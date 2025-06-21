@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4fb7f61c26.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="home_page.css">
+</head>
+<body>
+    <div class="d-flex flex-row justify-content-center text-white h-100">
+        <div class="d-flex flex-column justify-content-center w-50">
+            <h1 class="main-heading">"Hey there, Welcome to PicScape!</h1>
+            <p class="description">Your one-stop destination for exploring stunning images and transforming them with unique styles. Whether you're here to browse or customize, let's create something amazing together!"</p>
+            <div class="text-center">
+                <button class="browseImageBtn" id="browseImageBtn">Browse Images</button>
+                <button class="customizeStyleBtn" id="customizeStyleBtn">Customize Styles</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        let browseImageBtn = document.getElementById('browseImageBtn');
+        browseImageBtn.addEventListener('click',function(event){
+            event.preventDefault()
+            window.location.href="images_page.html"
+        })
+        let customizeStyleBtn = document.getElementById('customizeStyleBtn');
+        customizeStyleBtn.addEventListener('click',function(event){
+            event.preventDefault()
+            window.location.href="customize_styles.html"
+        })
+    </script>
+</body>
+</html>

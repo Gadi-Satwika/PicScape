@@ -1,0 +1,135 @@
+.backArrowImages{
+    background-color: transparent;
+    border: transparent;
+    margin: 10px;
+    color: white
+}
+
+/* General Page Styling */
+/* Import Google Font for Better UI */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('https://wallpaperaccess.com/full/2957951.jpg');
+    background-size: cover; /* Dark Green & Blue Theme */
+    color: white;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    gap: 30px; /* Dark Blue with Transparency */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    backdrop-filter: blur(10px);
+}
+
+.container:hover {
+    transform: scale(1);   
+}
+
+/* Filter Buttons */
+.filters {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.filters button {
+    padding: 12px 18px;
+    border: none;
+    background: transparent; /* Dark Green to Deep Blue */
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.filters button:hover {
+    background: transparent;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(59, 153, 117, 0.6);
+}
+
+.filters button:active {
+    transform: scale(0.95);
+}
+
+/* Image Upload Section */
+.image-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* File Input Styling */
+#imageUpload {
+    padding: 10px;
+    border:1px solid white; /* Deep Blue Border */
+    background: transparent;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#imageUpload:hover {
+    border-color: #14532d; /* Dark Green */
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Image Container */
+.image-container {
+    width: 280px;
+    height: 280px;
+    overflow: hidden;
+    border: 1px solid white; /* Deep Blue */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 4px 10px #14532d;
+}
+
+#uploadedImage {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 6px;
+}
+
+/* Download Button */
+#downloadBtn {
+    padding: 12px 18px;
+    background: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+#downloadBtn:hover {
+    background: #ad9f9f;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(20, 83, 45, 0.6);
+}
+
+#downloadBtn:active {
+    transform: scale(0.95);
+}

@@ -1,0 +1,76 @@
+.home-page-background{
+    background-image: url('https://wallpapers.com/images/featured/dark-theme-fnhq08cvzpdvxwxu.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+.nav-bar-styles
+{
+    color: white;
+    font-weight: 700;
+    font-family: Lucida Sans;
+}
+.form-heading {
+    padding-bottom: 20px;
+    font-family: "Roboto";
+    font-size: 30px;
+}
+
+.errorMessage {
+    font-family: "Roboto";
+    font-size: 14px;
+    color: #dc3545;
+}
+.form-page{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius:  6px;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    font-family: Lucida Sans;
+}
+.form-floating .form-control {
+    background: transparent !important;
+    color: white 
+}
+.picScapeLogo{
+    font-family: 'Pacifico', cursive; /* Stylish Script Font */
+    font-size: 32px; /* Large Size */
+    font-weight: bold;
+    color: #FFFFFF; /* Medium Sea Green */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+.picScapeLogo span{
+    color: #FFFFFF; /* Golden Yellow for 'Scape' */
+}
+/* Popup Styles */
+.popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    background: rgb(196, 185, 185);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    font-family: 'Lucida Sans';
+}
+
+.popup-content {
+    position: relative;
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+/* Popup Styles */
+
